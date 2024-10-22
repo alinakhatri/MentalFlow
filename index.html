@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SereneSpot</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="brand-section">
+        <img src="Images/logo.jpg" width="70" height="70" />
+        <h1 class="site-title">MentalFlow</h1>
+      </div>
+      <div class="search-box">
+        <form action="#">
+          <input type="text" placeholder="Search Forums" name="seacrh" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <div class="content-wrapper">
+      <div class="side-nav-wrapper">
+        <nav>
+          <ul class="menu-list">
+            <li>
+              <a href="index.html" class="active" onclick="location.reload();">
+                <span><img src="Images/home.png" /></span>Home</a
+              >
+            </li>
+            <li>
+              <a href="popularity.html">
+                <span><img src="Images/popularity.png" /></span>
+                Popularity</a
+              >
+            </li>
+            <li>
+              <a href="#notification">
+                <span><img src="Images/notification.png" /></span>
+                Notification</a
+              >
+            </li>
+
+            <div class="menu-separator"></div>
+
+            <li class="category-title">Resources</li>
+            <li class="sub-item">
+              <a href="latestResearches.html"
+                ><span><img src="Images/latestResources.png" /></span>Latest
+                Researches</a
+              >
+            </li>
+            <li class="sub-item">
+              <a href="#copingStrategies"
+                ><span><img src="Images/copingStrategies.png" alt="" /></span
+                >Coping Strategies</a
+              >
+            </li>
+            <li class="sub-item">
+              <a href="#positivePsychology"
+                ><span><img src="Images/positivePsychology.png" /></span
+                >Positive Psychology</a
+              >
+            </li>
+
+            <div class="menu-separator"></div>
+
+            <li>
+              <a href="#privacyPolicy"
+                ><span><img src="Images/privacyPolicy.png" /></span>Privacy
+                Policy</a
+              >
+            </li>
+            <li>
+              <a href="#termsAndConditions"
+                ><span><img src="Images/termsAndConditions.png" /></span>Terms
+                and Conditions</a
+              >
+            </li>
+            <li>
+              <a href="#aboutUs"
+                ><span><img src="Images/AboutUs.png" /></span>About Us</a
+              >
+            </li>
+
+            <div class="menu-separator"></div>
+
+            <li>
+              <a href="#logIn"
+                ><span><img src="Images/logIn.png" /></span>Log In</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay" id="overlay"></div>
+
+      <div class="main-area">
+        <div class="posts-container" id="postsContainer"></div>
+        <div class="post-card">
+          <div class="user-profile">
+            <img
+              src="https://i.pinimg.com/736x/59/74/2b/59742bf71f68b166518fd35d539c670e.jpg"
+              alt="nami"
+              class="profile-pic"
+            />
+            <div class="username">@HakiMaster</div>
+          </div>
+          <h2 class="post-title">Self-Care Reminder</h2>
+          <p class="post-content">
+            "Your mental health matters. Don’t forget to take time for yourself
+            today, whether it’s a short walk, journaling, or simply resting.
+            Small steps towards self-care can make a big difference."
+          </p>
+          <div class="interaction-bar">
+            <button class="like-button">
+              <span class="icon">❤️</span>2.3K
+            </button>
+            <button class="comment-button" id="commentBtn">
+              <span class="icon">💬</span>345
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="post-card">
+          <div class="user-profile">
+            <img
+              src="https://i.pinimg.com/474x/3d/53/a9/3d53a945766c0d0c15323eee5609d0e3.jpg"
+              alt="StrawHatSailor"
+              class="profile-pic"
+            />
+            <div class="username">@StrawHatSailor</div>
+          </div>
+          <h2 class="post-title">It’s Okay to Ask for Help</h2>
+          <p class="post-content">
+            "There’s no shame in reaching out for support. Whether you talk to a
+            friend, a counselor, or join a support group, seeking help is a sign
+            of strength, not weakness."
+          </p>
+          <img
+            src="https://i.pinimg.com/736x/03/5c/b3/035cb3cc9b29479c1fe2e00c8fcb9a50.jpg"
+            alt="nature"
+            class="post-image"
+          />
+          <div class="interaction-bar">
+            <button class="like-button"><span class="icon">❤️</span>5K</button>
+            <button class="comment-button" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="post-card">
+          <div class="user-profile">
+            <img
+              src="https://i.pinimg.com/control/564x/f2/e4/e4/f2e4e4c478696bd5adf2e5843386be82.jpg"
+              alt="SunnyVoyager"
+              class="profile-pic"
+            />
+            <div class="username">@SunnyVoyager</div>
+          </div>
+          <h2 class="post-title">Progress Over Perfection</h2>
+          <p class="post-content">
+            "Healing isn’t linear, and that’s okay. Some days are harder than
+            others, but progress is about consistency, not perfection. Be kind
+            to yourself through the journey."
+          </p>
+          <div class="interaction-bar">
+            <button class="like-button"><span class="icon">❤️</span>5K</button>
+            <button class="comment-button" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="post-card">
+          <div class="user-profile">
+            <img
+              src="https://i.pinimg.com/control/564x/5f/33/a2/5f33a22cd742fcb65c17137f9504f3ab.jpg"
+              alt="YonkoWarrior"
+              class="profile-pic"
+            />
+            <div class="username">@YonkoWarrior</div>
+          </div>
+          <h2 class="post-title">Checking in With Yourself</h2>
+          <p class="post-content">
+            "How are you feeling today? Take a moment to check in with your
+            emotions, thoughts, and energy. Being aware of your mental state is
+            the first step towards taking care of it."
+          </p>
+          <div class="interaction-bar">
+            <button class="like-button"><span class="icon">❤️</span>5K</button>
+            <button class="comment-button" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
